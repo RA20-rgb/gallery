@@ -1,0 +1,54 @@
+img{
+  object-fit: cover;
+    width: 500px;
+    height: 550px;
+  border-radius: 25px;
+  box-shadow:
+  5px 15px 15px #14120a92,
+  0px 0px 5px #ffc800,
+  0px 0px 15px #fff175;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.text{
+  color: white;
+  text-shadow:
+  0px 0px 50px #ffc800,
+  0px 0px 2px #fff175;
+  font-family: 'Verdana', sans-serif;
+}
+
+.galery{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+html{ 
+  background-color: #14120a;}
+
+button{
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  border: solid 0px;
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 
+    0px 0px 2px #ffc800,
+    0px 0px 15px #fff175;
+}

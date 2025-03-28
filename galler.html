@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="gal.css">
+  </head>
+  <body>
+    <div class="content">  
+      <div class="galery">  
+          <button id="button2" onclick="changeImage2()">◀</button>
+          <img class="img" src="https://i.pinimg.com/736x/31/e2/78/31e2782eb6700f1af303b335084a40a4.jpg" alt="img" id="img">
+          <button id="button1" onclick="changeImage1()">▶
+</button>
+      </div>
+          <h1 class="text">ANIMALS<h1>
+    </div>
+    <script>
+    let img = document.getElementById("img");
+    let image = ["https://i.pinimg.com/736x/31/e2/78/31e2782eb6700f1af303b335084a40a4.jpg", "https://i.pinimg.com/474x/fe/2b/d6/fe2bd653686b1be179e9a147ec8b9422.jpg", "https://i.pinimg.com/736x/d4/23/28/d42328c47dd3abd4ec6a9424a5551feb.jpg", "https://i.pinimg.com/736x/9e/39/89/9e398988987fbf9765d11ce48a99bf7b.jpg", "https://i.pinimg.com/736x/f8/e1/e0/f8e1e0ad7188dda4be1be77de2acd274.jpg", "https://i.pinimg.com/736x/b5/c2/6f/b5c26f73b1eec9aec27cb4f6fcab4b22.jpg", "https://i.pinimg.com/736x/a3/88/44/a388442124c0acffd64a95393ab674b0.jpg",];
+    let index = 0;
+    let travel;
+  
+    let changeImage1 = () => {
+      if (index === 0) index = image.length;
+      img.src = image[--index];
+    }
+  
+    let changeImage2 = () => {
+      if (index === image.length - 1) index = -1;
+      img.src = image[++index];
+    }
+    </script>
+  </body>
+</html>
